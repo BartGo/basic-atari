@@ -3,7 +3,7 @@
 3 REM * adapted for Atari Basic by BartGo
 
 9 REM ******** dane początkowe ********
-10 PRINT CHR$(125) : POKE 710, 0
+10 ? CHR$(125) : POKE 710, 0
 20 DIM pole(10)
 30 DIM koniec(10)
 40 FOR i=0 TO 10
@@ -48,7 +48,7 @@
 3040 IF odp=1 THEN LET pion=1
 3050 IF odp=2 THEN LET pion=-1
 3060 IF odp=9 THEN RUN
-3065 IF odp=0 THEN POKE 710, 148 : END
+3065 IF odp=0 THEN POKE 710, 148 : ? CHR$(125) : END
 3070 RETURN
 
 3999 REM ************ ruch ************
